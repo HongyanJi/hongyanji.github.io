@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>The University of Iowa</a>. Iowa City. (319) 335-3500. Moto. Etc.
+subtitle: <a href='#'>The University of Iowa</a>| Iowa City| (319) 335-3500
 
 profile:
   align: right
