@@ -18,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hongyan Ji's research focuses on the Theory of Distributed Computing, with a particular emphasis on Distributed Graph Algorithms. Hongyan Ji is supervised by [Prof. Sriram V. Pemmaraju](https://homepage.cs.uiowa.edu/~sriram/). 
+Hongyan Ji's research focuses on the Theory of Distributed Computing, with a particular emphasis on Distributed Graph Algorithms. Hongyan Ji is supervised by [Professor Sriram V. Pemmaraju](https://homepage.cs.uiowa.edu/~sriram/). 
 
  
 
