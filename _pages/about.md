@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle:  PhD. student | <a href='https://cs.uiowa.edu'>Computer Science</a> | The University of Iowa
+subtitle:  PhD. student <be> [Computer Science](https://cs.uiowa.edu) | The University of Iowa
 
 profile:
   align: right
@@ -18,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hongyan Ji's research focuses on the Theory of Distributed Computing, with a particular emphasis on Distributed Graph Algorithms. Hongyan Ji is supervised by <a https://homepage.cs.uiowa.edu/~sriram/>Prof. Sriram V. Pemmaraju</a>. 
+Hongyan Ji's research focuses on the Theory of Distributed Computing, with a particular emphasis on Distributed Graph Algorithms. Hongyan Ji is supervised by [Prof. Sriram V. Pemmaraju](https://homepage.cs.uiowa.edu/~sriram/). 
 
  
 
