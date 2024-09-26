@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle:  "PhD. student <br> <a href='https://cs.uiowa.edu'>Computer Science</a> | The University of Iowa"
+subtitle:  "PhD student <br> <a href='https://cs.uiowa.edu'>Computer Science</a> | The University of Iowa"
 
 profile:
   align: right
