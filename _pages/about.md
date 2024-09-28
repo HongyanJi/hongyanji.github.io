@@ -7,7 +7,7 @@ subtitle:  "PhD student <br> <a href='https://cs.uiowa.edu'>Computer Science</a>
 profile:
   align: right
   image: prof.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   address: >
     <p>269 Macbride Hall</p>
     <p>Iowa City, IA 52246</p>
