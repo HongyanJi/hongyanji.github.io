@@ -1,23 +1,23 @@
 {
   "basics": {
     "name": "Hongyan Ji",
-    "label": "Scientist",
+    "label": "Phd Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "hongyan-ji@uiowa.edu",
+    "phone": "(319) 400 0708",
+    "url": "https://hongyanji.github.io",
+    "summary": "A Phd student, whoes research specializes in the Theory of Distributed Computing, with a focus on Distributed Graph Algorithms.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "269 Macbride Hall",
+      "postalCode": "52242",
+      "city": "Iowa City",
+      "countryCode": "IA",
+      "region": "Iowa"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
+        "username": " ",
         "url": "https://twitter.com/AlbertEinstein"
       }
     ]
