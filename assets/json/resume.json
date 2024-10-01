@@ -38,16 +38,28 @@
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "University of Iowa, IA, USA",
+      "url": "https://cs.uiowa.edu/",
+      "area": "Computer Science",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": [
-        "Theory of Relativity"
-      ]
+      "startDate": "2021-08-23",
+      "endDate": "2026-05-15"
+    },
+    {
+      "institution": "University of Iowa, IA, USA",
+      "url": "https://cs.uiowa.edu/",
+      "area": "Computer Science",
+      "studyType": "Master",
+      "startDate": "2020-01-20",
+      "endDate": "2021-05-14"
+    },
+    {
+      "institution": "University of Iowa, IA, USA",
+      "url": "https://cs.uiowa.edu/",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2017-08-21",
+      "endDate": "2019-12-20"
     }
   ],
   "awards": [
