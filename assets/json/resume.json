@@ -55,12 +55,12 @@
       "endDate": "2019-12-20"
     }
   ],
-  "awards": [
+  "Experience": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Mentor for ExploreU",
+      "startdate": "2021-06-21",
+      "enddate": "2023-07-24",
+      "summary": "ExploreU is a summer camp that presents math and computer science lessons in a fun and exciting format. Duties include supervising ExploreU students at all times; helping instructors with workshop and treasure hunt preparations; assisting students during workshops.'"
     }
   ],
   "certificates": [],
