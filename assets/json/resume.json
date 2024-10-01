@@ -13,16 +13,9 @@
       "city": "Iowa City",
       "countryCode": "IA",
       "region": "Iowa"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": " ",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    }
   },
-  "work": [
+  "experience": [
     {
       "name": "Institute for Advanced Study, Princeton University",
       "position": "Professor of Theoretical Physics",
@@ -73,16 +66,6 @@
   "certificates": [],
   "publications": [],
   "skills": [],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent"
-    }
-  ],
   "interests": [],
   "references": [],
   "projects": []
