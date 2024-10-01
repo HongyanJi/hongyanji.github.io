@@ -17,14 +17,14 @@
   },
   "experience": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "ExploreU",
+      "position": "Mentor",
+      "url": "https://homepage.divms.uiowa.edu/~kleimn/exploreu/",
+      "startdate": "2021-06-21",
+      "enddate": "2023-07-24",
+      "summary": "ExploreU is a week-long, STEM program for middle school girls completing 6th, 7th and 8th grade, held annually in the summer.",
       "highlights": [
-        "Relativity"
+        "Duties include supervising ExploreU students at all times; helping instructors with workshop and treasure hunt preparations; assisting students during workshops."
       ]
     }
   ],
@@ -53,14 +53,6 @@
       "studyType": "Bachelor",
       "startDate": "2017-08-21",
       "endDate": "2019-12-20"
-    }
-  ],
-  "Experience": [
-    {
-      "title": "Mentor for ExploreU",
-      "startdate": "2021-06-21",
-      "enddate": "2023-07-24",
-      "summary": "ExploreU is a summer camp that presents math and computer science lessons in a fun and exciting format. Duties include supervising ExploreU students at all times; helping instructors with workshop and treasure hunt preparations; assisting students during workshops.'"
     }
   ],
   "certificates": [],
