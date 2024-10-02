@@ -14,8 +14,8 @@
     - title: PhD student
       institution: University of Iowa, IA, USA
       year: 2021-2026
-      description:
-        - focus on Distributed Graph Algorithms.
+      # description:
+      #   - focus on Distributed Graph Algorithms.
         # - Description 2.
         # - title: Description 3.
         #   contents:
@@ -74,30 +74,32 @@
 #       year: 2015-now
 #       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items: 
+#         - Nobel Prize in Physics 
+#         - Matteucci Medal
+#     - year: 2029
+#       items: 
+#         - Max Planck Medal
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Global Problems such as MST 
+    - title: Distributed graph algorithms 
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+        - rounds
+        - messages
+        - initial knowledge
+        - randominess
+    # - title: Topic 2.
+    #   items:
+    #     - Description 1.
+    #     - Description 2.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Hiking, Rock Climbing, etc.
