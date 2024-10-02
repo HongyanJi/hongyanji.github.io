@@ -15,7 +15,7 @@
       "region": "Iowa"
     }
   },
-  "experience": [
+  "experience": 
     {
       "name": "ExploreU",
       "position": "Mentor",
@@ -26,8 +26,7 @@
       "highlights": [
         "Duties: supervising ExploreU students at all times; helping instructors with workshop and treasure hunt preparations; assisting students during workshops."
       ]
-    }
-  ],
+    },
   "volunteer": [],
   "education": [
     {
