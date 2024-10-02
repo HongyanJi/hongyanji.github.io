@@ -93,7 +93,7 @@
         - rounds
         - messages
         - initial knowledge
-        - randominess
+        - randomness 
     # - title: Topic 2.
     #   items:
     #     - Description 1.
