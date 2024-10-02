@@ -15,17 +15,16 @@
       "region": "Iowa"
     }
   },
-  "experience": 
-    {
+  "experience": {
       "name": "ExploreU",
       "position": "Mentor",
       "url": "https://homepage.divms.uiowa.edu/~kleimn/exploreu/",
       "startdate": "2021-06-21",
       "enddate": "2023-07-24",
       "summary": "ExploreU is a week-long, STEM program for middle school girls completing 6th, 7th and 8th grade, held annually in the summer.",
-      "highlights": [
-        "Duties: supervising ExploreU students at all times; helping instructors with workshop and treasure hunt preparations; assisting students during workshops."
-      ]
+      "highlights": {
+        "Duties": "supervising ExploreU students at all times; helping instructors with workshop and treasure hunt preparations; assisting students during workshops."
+      }
     },
   "volunteer": [],
   "education": [
