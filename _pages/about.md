@@ -6,7 +6,7 @@ subtitle:  "PhD candidate <br> <a href='https://cs.uiowa.edu'>Computer Science</
 
 profile:
   align: right
-  image: prof.jpeg
+  image: prof.png
   image_circular: true # crops the image to make it circular
   address: >
     <p>269 Macbride Hall</p>
