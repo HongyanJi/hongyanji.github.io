@@ -16,7 +16,7 @@ nav_order: 1
 </div> -->
 
 <div class="publications">
-  {% for entry in site.data.scholar.bibliography %}
+  {% for entry in site.scholar.bibliography %}
     <div class="publication">
       <p>
         {{ entry | cite }}
