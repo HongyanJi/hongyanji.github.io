@@ -66,6 +66,8 @@ blockquote {
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 // Math
