@@ -59,15 +59,21 @@ img {
 
 blockquote {
   background: var(--global-bg-color);
-  border-left: 2px solid var(--global-theme-color);
+  border-left: 4px solid var(--global-theme-color); /* Make border more prominent if needed */
   margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  padding: 1em 15px; /* Adjust padding for better readability */
   font-size: 1.2rem;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  max-width: 100%;
-  word-break: break-word;
+  line-height: 1.6; /* Improve text readability */
+  
+  /* Ensure text wraps correctly */
+  white-space: pre-wrap; /* Preserve manual line breaks */
+  overflow-wrap: break-word; /* Break words when necessary */
+  word-wrap: break-word; /* Legacy property for older browsers */
+  word-break: break-word; /* Force long words to break */
+  
+  max-width: 100%; /* Prevent overflow beyond container */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for emphasis */
+  border-radius: 4px; /* Optional: Add slight rounding to edges */
 }
 
 // Math
