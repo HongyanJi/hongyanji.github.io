@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A paper titled "Fast Deterministic Massively Parallel Ruling Sets Algorithms", has been accepted for presentation at ICDCN 2025.
+A paper titled <a href="https://dl.acm.org/doi/10.1145/3700838.3700872">"Fast Deterministic Massively Parallel Ruling Sets Algorithms"</a>, has been accepted for presentation at ICDCN 2025.

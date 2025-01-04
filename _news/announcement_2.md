@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A paper titled "Faster Set Cover in the MPC Model", has been accepted for presentation at ICDCN 2025.
+A paper titled <a href="https://dl.acm.org/doi/10.1145/3700838.3700861">"Faster Set Cover in the MPC Model"</a>, has been accepted for presentation at ICDCN 2025.
