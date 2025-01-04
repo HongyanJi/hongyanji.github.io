@@ -10,3 +10,39 @@
   organization={Springer},
   pdf={sirocco24.pdf}
 }
+
+@inproceedings{10.1145/3700838.3700872, 
+author = {Ji, Hongyan and Kothapalli, Kishore and Pemmaraju, Sriram V and Singh, Ajitanshu}, 
+title = {Fast Deterministic Massively Parallel Ruling Sets Algorithms}, 
+year = {2025}, 
+isbn = {9798400710629}, 
+publisher = {Association for Computing Machinery}, 
+address = {New York, NY, USA}, 
+url = {https://doi.org/10.1145/3700838.3700872}, 
+doi = {10.1145/3700838.3700872}, 
+abstract = {In this paper, we present a deterministic (tilde{O}(log ^{1/3}Delta) )-round algorithm for the 2-ruling set problem in the sublinear Massively Parallel Computation (MPC) model. This improves upon the fastest known deterministic 2-ruling set algorithm for this model, which is the (tilde{O}(sqrt {log n}) )-round algorithm by Giliberti and Parsaeian (PODC 2024). Our result is obtained by derandomizing the “sample-and-gather” approach of Kothapalli, Pai, and Pemmaraju (FSTTCS 2020). The “sample-and-gather” approach involves making random sampling decisions, not just for the current iteration, but a batch of future iterations. Thus, derandomizing this approach requires the “fixing” of randomness for a batch of future iterations. We further extend our results to show that a β -ruling set for β ≥ 2 can be obtained in (tilde{O}(log ^{1/2^{beta }-1} Delta) ) deterministic rounds in the sublinear MPC model. Additionally, we present a deterministic β -ruling set algorithms for sparse graphs (i.e., bounded arboricity graphs) where β ≥ 2, which runs in (tilde{O}(log ^{1/2^beta - 1} lambda) ) rounds for arboricity-λ graphs in the sublinear MPC model.}, 
+booktitle = {Proceedings of the 26th International Conference on Distributed Computing and Networking}, 
+pages = {152–160}, 
+numpages = {9}, 
+keywords = {Derandomization, Deterministic Algorithms, Distributed Algorithms, Massively Parallel Computation, Ruling Sets}, 
+series = {ICDCN '25},
+pdf = {icdcn25rs.pdf} 
+}
+
+@inproceedings{10.1145/3700838.3700861, 
+author = {Ji, Hongyan and Pai, Shreyas and Pemmaraju, Sriram and Sobel, Joshua}, 
+title = {Faster Set Cover in the MPC Model}, 
+year = {2025}, 
+isbn = {9798400710629}, 
+publisher = {Association for Computing Machinery}, 
+address = {New York, NY, USA}, 
+url = {https://doi.org/10.1145/3700838.3700861}, 
+doi = {10.1145/3700838.3700861}, 
+abstract = {The Massively Parallel Computation (MPC) model is a popular abstraction for large-scale distributed computing. The Set Cover problem is a classical combinatorial optimization problem that has a wide variety of applications and generalizes many well-studied problems such as vertex cover, edge cover, and minimum dominating set. For a Set Cover instance with a ground set of n elements and a collection of m sets, we present two O(log n)-approximation algorithms in the MPC model. Our algorithms run in (tilde{O}(log N) )-rounds in the linear-memory MPC model and in (tilde{O}(log ^{1.5} N) ) rounds in the sublinear-memory MPC model, where N = n + m. These are the first O(log n)-approximation algorithms for Set Cover in this setting that run in o(log 2N) rounds. Our results are obtained by repurposing the sparsified graph exponentiation technique that has been successful for the maximal independent set problem in the MPC model and applying it to a simple, distributed Set Cover algorithm by Grunau, Mitrovi\'{c}, Rubinfeld, and Vakilian (SODA 2020).}, 
+booktitle = {Proceedings of the 26th International Conference on Distributed Computing and Networking}, 
+pages = {144–151}, 
+numpages = {8}, 
+keywords = {Parallel Set Cover, Massively Parallel Computing Model, Approximation}, 
+series = {ICDCN '25},
+pdf = {icdcn25sc.pdf} 
+}
