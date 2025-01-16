@@ -230,5 +230,14 @@
             {% highlight bibtex %}{{ entry.bibtex | hideCustomBibtex }}{% endhighlight %}
           </div>
           {%- endif %}
+          <style>
+            .highlight {
+              font-weight:bolder;
+              color: var(--global-theme-color) !important;
+              background-color: var(--global-code-bg-color);
+            }
+          </style>
+                <!-- Award -->
+                <div class="award"><p><span class = "highlight">{{entry.award}}</span></p></div>
         </div>
       </div>
