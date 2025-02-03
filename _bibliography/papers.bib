@@ -9,6 +9,13 @@
   year={2024},
   organization={Springer},
   abbr={SIROCCO},
+  abstract={The \textit{Knowledge Till $\rho$} (in short, $KT-\rho$) CONGEST model is a variant of the classical CONGEST model of distributed computing in which each vertex $v$ has initial knowledge of the radius-$\rho$ ball centered at $v$. 
+ The most commonly studied variants of the CONGEST model are KT-0 CONGEST in which nodes initially know nothing about their neighbors and KT-1 CONGEST in which nodes initially know the IDs of all their neighbors.
+ It has been shown that having access to neighbors IDs (as in the KT-1 CONGEST model) can substantially reduce the message complexity of algorithms for fundamental problems such as Broadcast and MST.  
+ For example, King, Kutten, and Thorup (PODC 2015) show how to construct an MST using just $\tilde{O}(n)$ messages in the KT-1 CONGEST model for an $n$-node graph, whereas there is an $\Omega(m)$ message lower bound for MST in the KT-0 CONGEST model for $m$-edge graphs.
+ Building on this result, Gmyr and Pandurangen (DISC 2018) present a family of distributed randomized algorithms for various global problems that exhibit a trade-off between message and round complexity. These algorithms are based on constructing a sparse, spanning subgraph called a \textit{danner}. Specifically, given a graph $G$ and any $\delta \in [0,1]$, their algorithm constructs (with high probability) a danner that has diameter $\tilde{O}(D + n^{1-\delta})$ and $\tilde{O}(\min\{m,n^{1+\delta}\})$ edges in $\tilde{O}(n^{1-\delta})$ rounds while using $\tilde{O}(\min\{m,n^{1+\delta}\})$ messages, where $n$, $m$, and $D$ are the number of nodes, edges, and the diameter of $G$, respectively.
+ In the main result of this paper, we show that if we assume the KT-2 CONGEST model, it is possible to substantially improve the time-message trade-off in constructing a danner. Specifically, we show in the KT-2 CONGEST model, how to construct a danner that has diameter $\tilde{O}(D + n^{1-2\delta})$ and $\tilde{O}(\min\{m,n^{1+\delta}\})$ edges in $\tilde{O}(n^{1-2\delta})$ rounds while using $\tilde{O}(\min\{m,n^{1+\delta}\})$ messages for any $\delta\in[0,\frac{1}{2}]$.
+ This result has immediate consequences for Broadcast, spanning tree construction, MST, Leader Election, and even local problems such as $(\Delta+1)$-coloring in the KT-2 CONGEST model. For example, we obtain a KT-2 CONGEST algorithm for MST that runs in $\tilde{O}(D + n^{1/2})$ rounds, while using only $\tilde{O}(\min\{m, n^{1 + 1/4}\})$ messages.},
   pdf={sirocco24.pdf}
 }
 
