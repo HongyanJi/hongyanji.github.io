@@ -16,8 +16,9 @@ nav_order: 5
 3. **Spring 2022, CS:3330 Spr22 Algorithms**  
    *Role:* Graded assignments and held office hours.
 
-4. **Spring 2021, CS:4640 Spr21 Computer Security**
+4. **Spring 2021, CS:4640 Spr21 Computer Security**  
    *Role:* Graded assignments and held office hours.
+
 
 
 
