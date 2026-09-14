@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching experience
-description: 
+title: teaching
+description: Teaching experience in algorithms, distributed computing, discrete structures, and computer security.
 nav: true
-nav_order: 5
+nav_order: 3
 ---
 
 1. **Fall 2024, CS:5620 Fall24 Distributed Systems and Algorithms**  
@@ -18,7 +18,6 @@ nav_order: 5
 
 4. **Spring 2021, CS:4640 Spr21 Computer Security**  
    *Role:* Graded assignments and held office hours.
-
 
 
 

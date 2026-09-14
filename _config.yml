@@ -1,22 +1,20 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-remote_theme: alshedivat/al-folio
-
 title: Hongyan Ji # the website title (if blank, full name will be used instead)
 first_name: Hongyan
 middle_name: 
 last_name: Ji
 email: jihy253@gmail.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+description: >
+  Hongyan Ji is a PhD candidate in Computer Science at the University of Iowa researching distributed computing, distributed graph algorithms, and massively parallel algorithms.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Built with Jekyll.
   
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+keywords: Hongyan Ji, distributed computing, distributed graph algorithms, massively parallel computation, graph algorithms, theoretical computer science
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🕸️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://hongyanji.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -28,19 +26,9 @@ back_to_top: true # set to false to disable the back to top button
 # Theme
 # -----------------------------------------------------------------------------
 
-# repo color theme
-
 # code highlighter theme
-# highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
-# highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
-
-# repo color theme
-repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_trophies:
-  enabled: true
-  theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
+highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -48,9 +36,6 @@ repo_trophies:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
-socials_in_search: true
-bib_search: true
 
 
 # Dimensions
@@ -62,9 +47,9 @@ max_width: 930px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: /assets/img/prof.png # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -124,13 +109,7 @@ cronitor_analytics:  # cronitor RUM analytics site ID (format: XXXXXXXXX)
 
 collections:
   news:
-    defaults:
-      layout: post
-    output: true
-    permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
+    output: false
 
 announcements:
   enabled: true
@@ -182,17 +161,12 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-diagrams
   - jekyll-email-protect
-  - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-scholar
   - jekyll-sitemap
-  - jekyll-toc
-  - jekyll-twitter-plugin
   - jemoji
 
 # Sitemap settings
@@ -245,13 +219,6 @@ scholar:
   group_by: year
   group_order: descending
 
-# Customize badge behavior in _layouts/bib.liquid
-enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
-
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric]
 
@@ -303,33 +270,19 @@ imagemagick:
 lazy_loading_images: true # enables lazy loading of images (recommended)
 
 # -----------------------------------------------------------------------------
-# Jekyll Diagrams
-# -----------------------------------------------------------------------------
-
-jekyll-diagrams:
-    # configuration, see https://github.com/zhustec/jekyll-diagrams.
-    # feel free to comment out this section if not using jekyll diagrams.
-
-
-# -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:    false  # enables google analytics
+enable_google_analytics:    true   # enables google analytics
 enable_cronitor_analytics: false  # enables cronitor RUM analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
-enable_masonry:             true   # enables automatic project cards arrangement
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
 enable_darkmode:            true   # enables switching between light/dark modes
 enable_navbar_social:       false  # enables displaying social links in the
                                    # navbar on the about page
-enable_project_categories:  true   # enables categorization of projects into
-                                   # multiple categories
-enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
-enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
 
 # -----------------------------------------------------------------------------
 # Library versions
@@ -353,35 +306,8 @@ jquery:
   integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 mathjax:
   version: "3.2.0"
-masonry:
-  version: "4.2.2"
-  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
 mdb:
   version: "4.20.0"
   integrity:
     css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
     js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
-medium_zoom:
-  version: "1.0.8"
-  integrity: "sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8="
-
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-jsonresume:
-  - basics
-  - experience
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references

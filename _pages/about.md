@@ -7,10 +7,8 @@ subtitle:  "PhD candidate <br> <a href='https://cs.uiowa.edu'>Computer Science</
 profile:
   align: right
   image: prof.png
-  image_circular: true # crops the image to make it circular
-  address: >
-    <p>269 Macbride Hall</p>
-    <p>Iowa City, IA 52246</p>
+  image_alt: Portrait of Hongyan Ji
+  image_circular: false
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"

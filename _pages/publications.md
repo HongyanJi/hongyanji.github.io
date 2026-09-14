@@ -2,9 +2,9 @@
 layout: page
 permalink: /publications/
 title: publications
-description:
+description: Publications in distributed and massively parallel algorithms.
 nav: true
-nav_order: 1
+nav_order: 2
 ---
 
 <!-- _pages/publications.md -->
