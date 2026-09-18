@@ -24,15 +24,18 @@
   role: Teaching assistant
   role_short: TA
   course: "CS:5620 Distributed Systems and Algorithms"
+  url: "https://myui.uiowa.edu/my-ui/courses/details.page?ci=158681&id=1025353"
   description: >-
-    Delivered two lectures on network decomposition, graded assignments, and held
-    office hours.
+    Graded assignments and held office hours throughout the course. As part of
+    the Practicum in College Teaching, designed and delivered two lectures on
+    network decomposition during one week.
 
 - year: 2023
   term: Spring
   role: Teaching assistant
   role_short: TA
   course: "CS:2210 Discrete Structures"
+  url: "https://myui.uiowa.edu/my-ui/courses/details.page?ci=158652&id=984246"
   description: >-
     Led discussion sessions, graded homework, and held office hours.
 
@@ -41,6 +44,7 @@
   role: Teaching assistant
   role_short: TA
   course: "CS:3330 Algorithms"
+  url: "https://myui.uiowa.edu/my-ui/courses/details.page?ci=158661&id=954612"
   description: >-
     Graded assignments and held office hours.
 
@@ -49,5 +53,6 @@
   role: Teaching assistant
   role_short: TA
   course: "CS:4640 Computer Security"
+  url: "https://myui.uiowa.edu/my-ui/courses/details.page?ci=158676&id=928686"
   description: >-
     Graded assignments and held office hours.
