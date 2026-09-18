@@ -20,9 +20,9 @@ nav_order: 3
           <div class="row">
             <div class="col-md-2 abbr">
               {% if entry.role_short != entry.role %}
-                <abbr class="badge teaching-role" title="{{ entry.role }}">{{ entry.role_short }}</abbr>
+                <abbr class="badge teaching-role teaching-role--{{ entry.role | slugify }}" title="{{ entry.role }}">{{ entry.role_short }}</abbr>
               {% else %}
-                <span class="badge teaching-role">{{ entry.role_short }}</span>
+                <span class="badge teaching-role teaching-role--{{ entry.role | slugify }}">{{ entry.role_short }}</span>
               {% endif %}
             </div>
             <div class="col-md-10">

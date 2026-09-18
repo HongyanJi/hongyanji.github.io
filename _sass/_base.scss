@@ -754,9 +754,16 @@ footer.sticky-bottom {
     display: inline-block;
     padding: 0.25rem 0.75rem;
     color: $white-color;
-    background-color: var(--global-theme-color);
     text-align: center;
     text-decoration: none;
+  }
+
+  ol.bibliography li .abbr .teaching-role--instructor {
+    background-color: #7b2d73;
+  }
+
+  ol.bibliography li .abbr .teaching-role--teaching-assistant {
+    background-color: #315d78;
   }
 
   .teaching-description {
@@ -764,10 +771,6 @@ footer.sticky-bottom {
     margin-bottom: 0;
     line-height: 1.55;
   }
-}
-
-html[data-theme='dark'] .publications.teaching .teaching-role {
-  color: $grey-color-dark;
 }
 
 // Rouge Color Customization
