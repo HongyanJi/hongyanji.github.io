@@ -22,6 +22,6 @@ I am on the **{{ site.job_market_cycle }} academic job market** and expect to co
 
 My research is in the theory of distributed computing, with an emphasis on distributed graph algorithms and massively parallel computation. I study how constraints on communication, memory, randomness, initial knowledge, and processor awake time shape what distributed algorithms can achieve.
 
-My recent work develops faster algorithms for graph optimization and symmetry breaking, explores how local knowledge can reduce communication, and studies energy-efficient computation in sleeping networks.
+My recent work develops energy-efficient distributed algorithms, faster massively parallel algorithms for approximation and symmetry breaking, and communication-efficient algorithms that exploit local initial knowledge.
 
  
