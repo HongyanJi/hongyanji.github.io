@@ -11,7 +11,7 @@ I earned the University of Iowa's Certificate in College Teaching in 2025.
 
 ## Instructor
 
-1. **[CS:3210 Programming Languages and Tools: The Go Programming Language](https://myui.uiowa.edu/my-ui/courses/details.page?ci=158660&id=1063169) — Spring 2026.** *Instructor.*
+1. **[CS:3210 Programming Languages and Tools: The Go Programming Language](https://myui.uiowa.edu/my-ui/courses/details.page?ci=158660&id=1063169) — Spring 2026.** *Instructor.* Led all aspects of the course, including syllabus and lesson planning, lectures, programming assignments and projects, assessments and grading, and office hours.
 
 ## Teaching Assistant
 
