@@ -29,7 +29,15 @@ nav_order: 3
               <div class="title">
                 {% if entry.url %}<a href="{{ entry.url }}">{{ entry.course }}</a>{% else %}{{ entry.course }}{% endif %}
               </div>
-              <div class="periodical">{{ entry.term }}</div>
+              <div class="periodical">
+                {{ entry.term }}
+                {% if entry.sections %}
+                  · Discussion sections:
+                  {% for section in entry.sections %}
+                    <a href="{{ section.url }}">{{ section.label }}</a>{% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
+                {% endif %}
+              </div>
               <p class="teaching-description">{{ entry.description }}</p>
             </div>
           </div>

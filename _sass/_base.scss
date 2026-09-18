@@ -758,7 +758,8 @@ footer.sticky-bottom {
     text-decoration: none;
   }
 
-  ol.bibliography li .abbr .teaching-role--instructor {
+  ol.bibliography li .abbr .teaching-role--instructor,
+  ol.bibliography li .abbr .teaching-role--discussion-section-instructor {
     background-color: #7b2d73;
   }
 

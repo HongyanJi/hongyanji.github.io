@@ -32,12 +32,17 @@
 
 - year: 2023
   term: Spring
-  role: Teaching assistant
-  role_short: TA
+  role: Discussion section instructor
+  role_short: Instructor
   course: "CS:2210 Discrete Structures"
   url: "https://myui.uiowa.edu/my-ui/courses/details.page?ci=158652&id=984246"
+  sections:
+    - label: "0A08"
+      url: "https://myui.uiowa.edu/my-ui/courses/details.page?ci=158652&id=984251"
+    - label: "0A09"
+      url: "https://myui.uiowa.edu/my-ui/courses/details.page?ci=158652&id=984252"
   description: >-
-    Led discussion sessions, graded homework, and held office hours.
+    Led both discussion sections, graded homework, and held office hours.
 
 - year: 2022
   term: Spring
