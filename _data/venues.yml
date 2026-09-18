@@ -3,7 +3,7 @@ DISC:
   color: "#1D4E89"
 
 TCS:
-  url: https://www.sciencedirect.com/journal/theoretical-computer-science
+  url: "https://www.sciencedirect.com/science/article/pii/S0304397526004676?dgcid=author"
   color: "#2E6B4E"
 
 SIROCCO:
