@@ -7,7 +7,11 @@ middle_name:
 last_name: Ji
 email: jihy253@gmail.com
 description: >
-  Hongyan Ji is a PhD candidate in Computer Science at the University of Iowa researching distributed computing, distributed graph algorithms, and massively parallel algorithms.
+  Hongyan Ji is a University of Iowa PhD candidate in distributed computing, graduating May 2027 and on the 2026–27 academic job market.
+job_title: PhD candidate in Computer Science
+affiliation: University of Iowa
+expected_graduation: May 2027
+job_market_cycle: 2026–27
 footer_text: >
   Built with Jekyll.
   
@@ -50,6 +54,7 @@ max_width: 930px
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
 og_image: /assets/img/prof.png # The site-wide (default for all links) Open Graph preview image
+og_image_alt: Portrait of Hongyan Ji
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -91,7 +96,7 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 
 contact_note: >
-  I am most easily reached by email.
+  <a href="mailto:jihy253@gmail.com">jihy253@gmail.com</a>
   
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -142,6 +147,7 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
+  - docker-local.yml
   - FAQ.md
   - Gemfile
   - Gemfile.lock
@@ -236,7 +242,7 @@ enable_publication_thumbnails: true
 # These are the defaults
 external_links:
   enabled: true
-  rel: external nofollow noopener
+  rel: external noopener
   target: _blank
   exclude:
 
@@ -246,7 +252,7 @@ external_links:
 # -----------------------------------------------------------------------------
 
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # responsive WebP variants are committed for fast image delivery
   widths:
     - 480
     - 800

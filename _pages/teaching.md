@@ -7,18 +7,14 @@ nav: true
 nav_order: 3
 ---
 
-1. **Fall 2024, CS:5620 Fall24 Distributed Systems and Algorithms**  
-   *Role:* Graded assignments, held office hours, and delivered two lectures on Network Decomposition.
+I earned the University of Iowa's Certificate in College Teaching in 2025.
 
-2. **Spring 2023, CS:2210 Spr23 Discrete Structures**  
-   *Role:* Led discussion sessions, graded homework, and held office hours.
+1. **CS:5620 Distributed Systems and Algorithms — Fall 2024.** *Teaching assistant.* Delivered two lectures on network decomposition, graded assignments, and held office hours.
 
-3. **Spring 2022, CS:3330 Spr22 Algorithms**  
-   *Role:* Graded assignments and held office hours.
+2. **CS:2210 Discrete Structures — Spring 2023.** *Teaching assistant.* Led discussion sessions, graded homework, and held office hours.
 
-4. **Spring 2021, CS:4640 Spr21 Computer Security**  
-   *Role:* Graded assignments and held office hours.
+3. **CS:3330 Algorithms — Spring 2022.** *Teaching assistant.* Graded assignments and held office hours.
 
-
+4. **CS:4640 Computer Security — Spring 2021.** *Teaching assistant.* Graded assignments and held office hours.
 
 

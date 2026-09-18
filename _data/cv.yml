@@ -11,19 +11,15 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD student
+    - title: PhD candidate in Computer Science
       institution: University of Iowa, IA, USA
-      year: 2021-2026
-      # description:
-      #   - focus on Distributed Graph Algorithms.
-        # - Description 2.
-        # - title: Description 3.
-        #   contents:
-        #     - Sub-description 1.
-        #     - Sub-description 2.
+      year: 2021–2027
+      description:
+        - "Expected graduation: May 2027."
+        - "Advisor: <a href='https://homepage.cs.uiowa.edu/~sriram/'>Sriram V. Pemmaraju</a>."
     - title: BS and MCS
       institution: University of Iowa, IA, USA
-      year: 2017-2021
+      year: 2017–2021
       # description:
       #   - Description 1.
       #   - Description 2.

@@ -23,18 +23,26 @@
     {%- else -%}
         {%- capture title -%}{{ site.title }}{%- endcapture -%}
     {%- endif -%}
+    {%- assign metadata_page_title = page.title -%}
+    {%- case page.title -%}
+        {%- when "cv" -%}{%- assign metadata_page_title = "CV" -%}
+        {%- when "news" -%}{%- assign metadata_page_title = "News" -%}
+        {%- when "publications" -%}{%- assign metadata_page_title = "Publications" -%}
+        {%- when "teaching" -%}{%- assign metadata_page_title = "Teaching" -%}
+    {%- endcase -%}
+    {%- assign metadata_description = page.description | default: site.description | strip -%}
     {% if page.title != "blank" and page.url != "/" -%}
         {%- if page.title == nil or page.title == "" -%}
             {{ page.date | date: "%Y" }} | {{ title }}
         {%- else -%}
-            {{ page.title }} | {{ title }}
+            {{ metadata_page_title }} | {{ title }}
         {%- endif -%}
     {%- else -%}
         {{ title }}
     {%- endif -%}
     </title>
-    <meta name="author" content="{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}" />
-    <meta name="description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
+    <meta name="author" content="{{ site.title }}" />
+    <meta name="description" content="{{ metadata_description }}" />
 {%- if page.keywords or site.keywords %}
     <meta name="keywords" content="{%- if page.keywords -%}{{ page.keywords }}{%- else -%}{{ site.keywords }}{%- endif -%}" />
 {%- endif %}
@@ -43,20 +51,22 @@
     <!-- OpenGraph -->
     <meta property="og:site_name" content="{{ title }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="{%- if page.title -%}{{ title }} | {{ page.title }}{%- else -%}{{ title }}{%- endif -%}" />
+    <meta property="og:title" content="{%- if page.url == '/' or page.title == blank -%}{{ title }}{%- else -%}{{ metadata_page_title }} | {{ title }}{%- endif -%}" />
     <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}" />
-    <meta property="og:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
+    <meta property="og:description" content="{{ metadata_description }}" />
     {% if page.og_image or site.og_image -%}
-    <meta property="og:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
+    <meta property="og:image" content="{{ page.og_image | default: site.og_image | absolute_url }}" />
+    <meta property="og:image:alt" content="{{ page.og_image_alt | default: site.og_image_alt }}" />
     {%- endif %}
     <meta property="og:locale" content="{{ site.lang }}" />
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{%- if page.title -%}{{ page.title }}{%- else -%}{{ title }}{%- endif -%}" />
-    <meta name="twitter:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
+    <meta name="twitter:title" content="{%- if page.url == '/' or page.title == blank -%}{{ title }}{%- else -%}{{ metadata_page_title }} | {{ title }}{%- endif -%}" />
+    <meta name="twitter:description" content="{{ metadata_description }}" />
     {% if page.og_image or site.og_image -%}
-    <meta name="twitter:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
+    <meta name="twitter:image" content="{{ page.og_image | default: site.og_image | absolute_url }}" />
+    <meta name="twitter:image:alt" content="{{ page.og_image_alt | default: site.og_image_alt }}" />
     {%- endif %}
     {% if site.twitter_username -%}
     <meta name="twitter:site" content="@{{ site.twitter_username }}" />
@@ -205,26 +215,32 @@
         {%- capture link -%}https://www.zotero.org/{{ site.zotero_username }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
-    {%- if sameaslinks != blank -%}
-        {%- assign sameaslinks = sameaslinks | split: "" -%}
+    {%- assign schema_description = metadata_description -%}
+    {%- assign schema_headline = metadata_page_title | default: site.title -%}
+    {%- if page.url == "/" -%}
+        {%- assign schema_headline = site.title -%}
     {%- endif -%}
-
     <script type="application/ld+json">
     {
-        "author":
-        {
+        "@context": "https://schema.org",
+        "@type": "{% if page.url == '/' %}ProfilePage{% else %}WebPage{% endif %}",
+        "url": {{ page.url | absolute_url | jsonify }},
+        "name": {{ schema_headline | jsonify }},
+        "description": {{ schema_description | jsonify }},
+        "mainEntity": {
             "@type": "Person",
-            "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}"
-        },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "WebSite",
-        "description": "{%- if page.description -%}{{ page.description }}{%- else if site.description -%}{{ site.description }}{%- endif -%}",
-        "headline": "{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}",
+            "name": {{ site.title | jsonify }},
+            "url": {{ '/' | absolute_url | jsonify }},
+            "image": {{ site.og_image | absolute_url | jsonify }},
+            "jobTitle": {{ site.job_title | jsonify }},
+            "affiliation": {
+                "@type": "CollegeOrUniversity",
+                "name": {{ site.affiliation | jsonify }}
+            }{% if sameaslinks != blank %},{% endif %}
         {% if sameaslinks != blank -%}
-        "sameAs": {{ sameaslinks }},
+            "sameAs": {{ sameaslinks | jsonify }}
         {%- endif %}
-        "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
-        "@context": "https://schema.org"
+        }
     }
     </script>
 {%- endif %}

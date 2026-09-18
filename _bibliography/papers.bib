@@ -1,6 +1,20 @@
 ---
 ---
 
+@inproceedings{ji2026approximating,
+  author = {Ji, Hongyan and Pai, Shreyas and Pemmaraju, Sriram V.},
+  title = {Approximating Minimum Dominating Set with Few Awake Rounds},
+  booktitle = {40th International Symposium on Distributed Computing},
+  year = {2026},
+  abbr = {DISC},
+  note = {To appear at DISC 2026},
+  arxiv = {2608.19096},
+  abstract = {We study Minimum Dominating Set in the sleeping CONGEST model, where nodes may sleep and can compute or communicate only while awake. We give the first O(log Δ)-approximation algorithm with o(log² Δ) awake complexity: it runs in O(log² Δ) rounds with Õ(log Δ) awake complexity. We also establish a trade-off between approximation quality and awake complexity.},
+  keywords = {Distributed Algorithms, Sleeping CONGEST, Awake Complexity, Minimum Dominating Set, Approximation Algorithms},
+  bibtex_show = {true},
+  selected = {true}
+}
+
 @article{ji2026faster,
   author = {Ji, Hongyan and Pai, Shreyas and Pemmaraju, Sriram V. and Sobel, Joshua},
   title = {Faster Set Cover in the MPC Model},
@@ -12,67 +26,70 @@
   doi = {10.1016/j.tcs.2026.116238},
   url = {https://doi.org/10.1016/j.tcs.2026.116238},
   abbr = {TCS},
-  note = {Journal version; published online September 8, 2026; Volume 1086, Article 116238},
-  keywords = {Parallel Set Cover, Massively Parallel Computation Model, Approximation Algorithms},
-  abstract = {The Massively Parallel Computation (MPC) model is a popular abstraction for large-scale distributed computing. The Set Cover problem is a classical combinatorial optimization problem that has a wide variety of applications and generalizes many well-studied problems such as vertex cover, edge cover, and minimum dominating set. For a Set Cover instance with a ground set of $n$ elements and a collection of $m$ sets, we present two $O(\log n)$-approximation algorithms in the MPC model. Our algorithms run in $\widetilde{O}(\log N)$ rounds in the linear-memory MPC model and in $\widetilde{O}(\log^{1.5} N)$ rounds in the sublinear-memory MPC model, where $N = n + m$. These are the first $O(\log n)$-approximation algorithms for Set Cover in this setting that run in $o(\log^2 N)$ rounds.},
-  pdf = {tcs26sc.pdf}
+  note = {Journal version; Volume 1086, Article 116238},
+  keywords = {Parallel Set Cover, Massively Parallel Computation, Approximation Algorithms},
+  abstract = {The Massively Parallel Computation (MPC) model is a popular abstraction for large-scale distributed computing. For Set Cover with n elements and m sets, we give two O(log n)-approximation algorithms. They run in Õ(log N) rounds in the linear-memory MPC model and Õ(log¹·⁵ N) rounds in the sublinear-memory MPC model, where N = n + m. These are the first O(log n)-approximation algorithms for Set Cover in this setting that run in o(log² N) rounds.},
+  pdf = {tcs26sc.pdf},
+  bibtex_show = {true},
+  selected = {true}
 }
 
 @inproceedings{ji2024towards,
-  title={Towards singular optimality in the presence of local initial knowledge},
-  author={Ji, Hongyan and Pemmaraju, Sriram V},
-  booktitle={International Colloquium on Structural Information and Communication Complexity},
-  pages={300--317},
-  year={2024},
-  organization={Springer},
-  abbr={SIROCCO},
-  abstract={The \textit{Knowledge Till $\rho$} (in short, $KT-\rho$) CONGEST model is a variant of the classical CONGEST model of distributed computing in which each vertex $v$ has initial knowledge of the radius-$\rho$ ball centered at $v$. 
- The most commonly studied variants of the CONGEST model are KT-0 CONGEST in which nodes initially know nothing about their neighbors and KT-1 CONGEST in which nodes initially know the IDs of all their neighbors.
- It has been shown that having access to neighbors IDs (as in the KT-1 CONGEST model) can substantially reduce the message complexity of algorithms for fundamental problems such as Broadcast and MST.  
- For example, King, Kutten, and Thorup (PODC 2015) show how to construct an MST using just $\tilde{O}(n)$ messages in the KT-1 CONGEST model for an $n$-node graph, whereas there is an $\Omega(m)$ message lower bound for MST in the KT-0 CONGEST model for $m$-edge graphs.
- Building on this result, Gmyr and Pandurangen (DISC 2018) present a family of distributed randomized algorithms for various global problems that exhibit a trade-off between message and round complexity. These algorithms are based on constructing a sparse, spanning subgraph called a \textit{danner}. Specifically, given a graph $G$ and any $\delta \in [0,1]$, their algorithm constructs (with high probability) a danner that has diameter $\tilde{O}(D + n^{1-\delta})$ and $\tilde{O}(\min\{m,n^{1+\delta}\})$ edges in $\tilde{O}(n^{1-\delta})$ rounds while using $\tilde{O}(\min\{m,n^{1+\delta}\})$ messages, where $n$, $m$, and $D$ are the number of nodes, edges, and the diameter of $G$, respectively.
- In the main result of this paper, we show that if we assume the KT-2 CONGEST model, it is possible to substantially improve the time-message trade-off in constructing a danner. Specifically, we show in the KT-2 CONGEST model, how to construct a danner that has diameter $\tilde{O}(D + n^{1-2\delta})$ and $\tilde{O}(\min\{m,n^{1+\delta}\})$ edges in $\tilde{O}(n^{1-2\delta})$ rounds while using $\tilde{O}(\min\{m,n^{1+\delta}\})$ messages for any $\delta\in[0,\frac{1}{2}]$.
- This result has immediate consequences for Broadcast, spanning tree construction, MST, Leader Election, and even local problems such as $(\Delta+1)$-coloring in the KT-2 CONGEST model. For example, we obtain a KT-2 CONGEST algorithm for MST that runs in $\tilde{O}(D + n^{1/2})$ rounds, while using only $\tilde{O}(\min\{m, n^{1 + 1/4}\})$ messages.},
-  pdf={sirocco24.pdf}
+  author = {Ji, Hongyan and Pemmaraju, Sriram V.},
+  title = {Towards Singular Optimality in the Presence of Local Initial Knowledge},
+  booktitle = {International Colloquium on Structural Information and Communication Complexity},
+  pages = {300--317},
+  year = {2024},
+  organization = {Springer},
+  doi = {10.1007/978-3-031-60603-8_17},
+  url = {https://doi.org/10.1007/978-3-031-60603-8_17},
+  abbr = {SIROCCO},
+  abstract = {The Knowledge Till ρ (KT-ρ) CONGEST model gives each node initial knowledge of its radius-ρ neighborhood. We show that radius-2 initial knowledge substantially improves the round-message trade-off for constructing a sparse communication backbone, or danner. The construction yields improved algorithms for broadcast, leader election, spanning tree, minimum spanning tree, and coloring in the KT-2 CONGEST model.},
+  pdf = {sirocco24.pdf},
+  bibtex_show = {true},
+  selected = {true}
 }
 
-@inproceedings{10.1145/3700838.3700872, 
-author = {Ji, Hongyan and Kothapalli, Kishore and Pemmaraju, Sriram V and Singh, Ajitanshu}, 
-title = {Fast Deterministic Massively Parallel Ruling Sets Algorithms}, 
-year = {2025}, 
-isbn = {9798400710629}, 
-publisher = {Association for Computing Machinery}, 
-address = {New York, NY, USA}, 
-url = {https://doi.org/10.1145/3700838.3700872}, 
-doi = {10.1145/3700838.3700872}, 
-abstract = {In this paper, we present a deterministic (tilde{O}(log ^{1/3}Delta) )-round algorithm for the 2-ruling set problem in the sublinear Massively Parallel Computation (MPC) model. This improves upon the fastest known deterministic 2-ruling set algorithm for this model, which is the (tilde{O}(sqrt {log n}) )-round algorithm by Giliberti and Parsaeian (PODC 2024). Our result is obtained by derandomizing the “sample-and-gather” approach of Kothapalli, Pai, and Pemmaraju (FSTTCS 2020). The “sample-and-gather” approach involves making random sampling decisions, not just for the current iteration, but a batch of future iterations. Thus, derandomizing this approach requires the “fixing” of randomness for a batch of future iterations. We further extend our results to show that a β -ruling set for β ≥ 2 can be obtained in (tilde{O}(log ^{1/2^{beta }-1} Delta) ) deterministic rounds in the sublinear MPC model. Additionally, we present a deterministic β -ruling set algorithms for sparse graphs (i.e., bounded arboricity graphs) where β ≥ 2, which runs in (tilde{O}(log ^{1/2^beta - 1} lambda) ) rounds for arboricity-λ graphs in the sublinear MPC model.}, 
-booktitle = {Proceedings of the 26th International Conference on Distributed Computing and Networking}, 
-pages = {152–160}, 
-numpages = {9}, 
-keywords = {Derandomization, Deterministic Algorithms, Distributed Algorithms, Massively Parallel Computation, Ruling Sets}, 
-series = {ICDCN '25},
-abbr={ICDCN},
-pdf = {icdcn25rs.pdf} 
-}
-
-@inproceedings{10.1145/3700838.3700861, 
-author = {Ji, Hongyan and Pai, Shreyas and Pemmaraju, Sriram and Sobel, Joshua}, 
-title = {Faster Set Cover in the MPC Model}, 
-year = {2025}, 
-isbn = {9798400710629}, 
-publisher = {Association for Computing Machinery}, 
-address = {New York, NY, USA}, 
-url = {https://doi.org/10.1145/3700838.3700861}, 
-doi = {10.1145/3700838.3700861}, 
-abstract = {The Massively Parallel Computation (MPC) model is a popular abstraction for large-scale distributed computing. The Set Cover problem is a classical combinatorial optimization problem that has a wide variety of applications and generalizes many well-studied problems such as vertex cover, edge cover, and minimum dominating set. For a Set Cover instance with a ground set of n elements and a collection of m sets, we present two O(log n)-approximation algorithms in the MPC model. Our algorithms run in (tilde{O}(log N) )-rounds in the linear-memory MPC model and in (tilde{O}(log ^{1.5} N) ) rounds in the sublinear-memory MPC model, where N = n + m. These are the first O(log n)-approximation algorithms for Set Cover in this setting that run in o(log 2N) rounds. Our results are obtained by repurposing the sparsified graph exponentiation technique that has been successful for the maximal independent set problem in the MPC model and applying it to a simple, distributed Set Cover algorithm by Grunau, Mitrovi\'{c}, Rubinfeld, and Vakilian (SODA 2020).}, 
-booktitle = {Proceedings of the 26th International Conference on Distributed Computing and Networking}, 
-pages = {144–151}, 
-numpages = {8}, 
-keywords = {Parallel Set Cover, Massively Parallel Computing Model, Approximation}, 
+@inproceedings{ji2025rulingsets,
+  author = {Ji, Hongyan and Kothapalli, Kishore and Pemmaraju, Sriram V. and Singh, Ajitanshu},
+  title = {Fast Deterministic Massively Parallel Ruling Sets Algorithms},
+  booktitle = {Proceedings of the 26th International Conference on Distributed Computing and Networking},
   series = {ICDCN '25},
-  abbr={ICDCN},
+  pages = {152--160},
+  numpages = {9},
+  year = {2025},
+  isbn = {9798400710629},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3700838.3700872},
+  url = {https://doi.org/10.1145/3700838.3700872},
+  abbr = {ICDCN},
+  keywords = {Derandomization, Deterministic Algorithms, Distributed Algorithms, Massively Parallel Computation, Ruling Sets},
+  abstract = {We give a deterministic Õ((log Δ)^(1/3))-round algorithm for the 2-ruling set problem in the sublinear-memory MPC model, improving on the previous Õ(sqrt(log n))-round bound. The result derandomizes the sample-and-gather approach, which requires fixing randomness for a batch of future iterations. We extend the approach to β-ruling sets and to bounded-arboricity graphs.},
+  pdf = {icdcn25rs.pdf},
+  bibtex_show = {true},
+  selected = {true}
+}
+
+@inproceedings{ji2025setcover,
+  author = {Ji, Hongyan and Pai, Shreyas and Pemmaraju, Sriram V. and Sobel, Joshua},
+  title = {Faster Set Cover in the MPC Model},
+  booktitle = {Proceedings of the 26th International Conference on Distributed Computing and Networking},
+  series = {ICDCN '25},
+  pages = {144--151},
+  numpages = {8},
+  year = {2025},
+  isbn = {9798400710629},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3700838.3700861},
+  url = {https://doi.org/10.1145/3700838.3700861},
+  abbr = {ICDCN},
   note = {Conference version},
+  keywords = {Parallel Set Cover, Massively Parallel Computation, Approximation Algorithms},
+  abstract = {For Set Cover with n elements and m sets, we give O(log n)-approximation algorithms that run in Õ(log N) rounds in the linear-memory MPC model and Õ(log¹·⁵ N) rounds in the sublinear-memory MPC model, where N = n + m. We obtain these results by adapting sparsified graph exponentiation, previously used for maximal independent set, to a distributed Set Cover algorithm.},
   pdf = {icdcn25sc.pdf},
-award = {Best Paper Award - Distributed Computing track 🏆 in ICDCN 2025},
-supp = {ICDCN2025BestPaperDCT.pdf} 
+  supp = {ICDCN2025BestPaperDCT.pdf},
+  award = {Best Paper Award, Distributed Computing Track, ICDCN 2025},
+  bibtex_show = {true}
 }

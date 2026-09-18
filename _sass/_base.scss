@@ -300,12 +300,15 @@ blockquote {
 // Social (bottom)
 
 .social {
-  text-align: center;
+  margin: 1.25rem 0 2rem;
+  text-align: left;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
 
     a {
+      margin-right: 0.5rem;
+
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
@@ -320,7 +323,8 @@ blockquote {
   }
 
   .contact-note {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
   }
 }
 
@@ -645,9 +649,10 @@ footer.sticky-bottom {
       }
 
       .links {
-        a.btn {
+        .btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
+          background-color: transparent;
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
@@ -657,6 +662,11 @@ footer.sticky-bottom {
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
+          }
+
+          &:focus-visible {
+            outline: 3px solid var(--global-theme-color);
+            outline-offset: 2px;
           }
         }
       }
