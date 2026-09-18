@@ -758,8 +758,7 @@ footer.sticky-bottom {
     text-decoration: none;
   }
 
-  ol.bibliography li .abbr .teaching-role--instructor,
-  ol.bibliography li .abbr .teaching-role--discussion-section-instructor {
+  ol.bibliography li .abbr .teaching-role--instructor {
     background-color: #7b2d73;
   }
 
@@ -769,6 +768,14 @@ footer.sticky-bottom {
 
   ol.bibliography li .abbr .teaching-role--teaching-assistant {
     background-color: #315d78;
+  }
+
+  ol.bibliography li .abbr .teaching-role--discussion-section-leader {
+    background-color: #7a4e00;
+  }
+
+  ol.bibliography li .abbr .teaching-role--grader {
+    background-color: #5a5f66;
   }
 
   .teaching-description {
