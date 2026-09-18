@@ -1,1 +1,15 @@
-{}
+DISC:
+  url: https://www.disc-conference.org/wp/disc2026/
+  color: "#1D4E89"
+
+TCS:
+  url: https://www.sciencedirect.com/journal/theoretical-computer-science
+  color: "#2E6B4E"
+
+SIROCCO:
+  url: https://sirocco2024.di.unisa.it/
+  color: "#8A4B20"
+
+ICDCN:
+  url: https://cse.iith.ac.in/icdcn-2025/
+  color: "#6A4C93"
