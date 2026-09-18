@@ -3,7 +3,7 @@ DISC:
   color: "#1D4E89"
 
 TCS:
-  url: "https://www.sciencedirect.com/science/article/pii/S0304397526004676?dgcid=author"
+  url: https://doi.org/10.1016/j.tcs.2026.116238
   color: "#2E6B4E"
 
 SIROCCO:
