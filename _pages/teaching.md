@@ -2,24 +2,39 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Teaching experience in programming languages, algorithms, distributed computing, discrete structures, and computer security.
+description: Teaching experience at the University of Iowa.
 nav: true
 nav_order: 3
 ---
 
-I earned the University of Iowa's Certificate in College Teaching in 2025.
+**Graduate Certificate in College Teaching** (Physical and Mathematical Sciences), University of Iowa, 2025.
 
-## Instructor
+{% assign teaching_years = site.data.teaching | group_by: "year" | sort: "name" | reverse %}
 
-1. **[CS:3210 Programming Languages and Tools: The Go Programming Language](https://myui.uiowa.edu/my-ui/courses/details.page?ci=158660&id=1063169) — Spring 2026.** *Instructor.* Led all aspects of the course, including syllabus and lesson planning, lectures, programming assignments and projects, assessments and grading, and office hours.
-
-## Teaching Assistant
-
-1. **CS:5620 Distributed Systems and Algorithms — Fall 2024.** *Teaching assistant.* Delivered two lectures on network decomposition, graded assignments, and held office hours.
-
-2. **CS:2210 Discrete Structures — Spring 2023.** *Teaching assistant.* Led discussion sessions, graded homework, and held office hours.
-
-3. **CS:3330 Algorithms — Spring 2022.** *Teaching assistant.* Graded assignments and held office hours.
-
-4. **CS:4640 Computer Security — Spring 2021.** *Teaching assistant.* Graded assignments and held office hours.
-
+<div class="publications teaching">
+  {% for teaching_year in teaching_years %}
+    <h2 class="bibliography">{{ teaching_year.name }}</h2>
+    <ol class="bibliography">
+      {% for entry in teaching_year.items %}
+        <li>
+          <div class="row">
+            <div class="col-md-2 abbr">
+              {% if entry.role_short != entry.role %}
+                <abbr class="badge teaching-role" title="{{ entry.role }}">{{ entry.role_short }}</abbr>
+              {% else %}
+                <span class="badge teaching-role">{{ entry.role_short }}</span>
+              {% endif %}
+            </div>
+            <div class="col-md-10">
+              <div class="title">
+                {% if entry.url %}<a href="{{ entry.url }}">{{ entry.course }}</a>{% else %}{{ entry.course }}{% endif %}
+              </div>
+              <div class="periodical">{{ entry.term }}</div>
+              <p class="teaching-description">{{ entry.description }}</p>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  {% endfor %}
+</div>

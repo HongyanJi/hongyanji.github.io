@@ -729,6 +729,47 @@ footer.sticky-bottom {
   }
 }
 
+// Teaching
+
+.publications.teaching {
+  margin-top: 1.5rem;
+
+  h2.bibliography {
+    margin-bottom: 1rem;
+
+    &:first-child {
+      margin-top: 1.5rem;
+    }
+  }
+
+  ol.bibliography li {
+    margin-bottom: 1.25rem;
+  }
+
+  .abbr {
+    height: auto;
+  }
+
+  .teaching-role {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    color: $white-color;
+    background-color: var(--global-theme-color);
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .teaching-description {
+    margin-top: 0.35rem;
+    margin-bottom: 0;
+    line-height: 1.55;
+  }
+}
+
+html[data-theme='dark'] .publications.teaching .teaching-role {
+  color: $grey-color-dark;
+}
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;
