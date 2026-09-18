@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 <!-- _pages/publications.md -->
-My research spans distributed graph algorithms, massively parallel computation, and resource-efficient approximation. Preprints and open-access copies are linked below when available.
+I design resource-efficient distributed and massively parallel algorithms, studying how constraints on communication, memory, randomness, initial knowledge, and energy shape algorithms for graph problems and combinatorial optimization. Preprints and open-access copies are linked below when available.
 
 <div class="publications">
 
