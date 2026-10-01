@@ -18,10 +18,23 @@ social: true  # includes social icons at the bottom of the page
 
 I am a PhD candidate in Computer Science at the University of Iowa, advised by [Professor Sriram V. Pemmaraju](https://homepage.cs.uiowa.edu/~sriram/).
 
-I am on the **{{ site.job_market_cycle }} academic job market** and expect to complete my PhD in **{{ site.expected_graduation }}**.
+I expect to complete my PhD in **{{ site.expected_graduation }}** and am on the **{{ site.job_market_cycle }} academic job market**.
 
-My research is in the theory of distributed computing, with an emphasis on distributed graph algorithms and massively parallel computation. I study how constraints on communication, memory, randomness, initial knowledge, and processor awake time shape what distributed algorithms can achieve.
+As a theoretical computer scientist, I work on distributed and parallel
+graph algorithms.  I study how computational
+models and resource constraints shape algorithm design.  My research asks
+what information is needed to solve a problem, where that information must
+be available, and how processors can coordinate their decisions with limited
+communication.
+These questions motivate my work on graph problems and my interest in
+settings where inputs are too large to store in full on a single machine, or the input changes over time.
 
-My recent work develops energy-efficient distributed algorithms, faster massively parallel algorithms for approximation and symmetry breaking, and communication-efficient algorithms that exploit local initial knowledge.
+Alongside running time, the classical measure of efficiency, I study
+communication, memory, energy use, and the
+role of randomness.  In distributed computation, an algorithm may finish
+quickly while sending many messages or keeping every processor active
+throughout its execution.  I seek algorithms that reduce these additional
+costs while preserving running time and solution quality, and investigate
+when this is possible.  
 
  
