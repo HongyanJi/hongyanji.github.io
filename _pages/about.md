@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "PhD candidate in <a href='https://cs.uiowa.edu'>Computer Science</a> at the University of Iowa"
+subtitle: "Distributed and parallel graph algorithms"
 description: "Hongyan Ji is a University of Iowa PhD candidate in distributed computing, graduating May 2027 and on the 2026–27 academic job market."
 
 profile:
