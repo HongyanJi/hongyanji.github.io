@@ -26,8 +26,6 @@ models and resource constraints shape algorithm design.  My research asks
 what information is needed to solve a problem, where that information must
 be available, and how processors can coordinate their decisions with limited
 communication.
-These questions motivate my work on graph problems and my interest in
-settings where inputs are too large to store in full on a single machine, or the input changes over time.
 
 Alongside running time, the classical measure of efficiency, I study
 communication, memory, energy use, and the
